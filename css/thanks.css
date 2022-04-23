@@ -1,0 +1,22 @@
+.thanks_inner {
+  margin-top: 160px;
+}
+.thanks_title {
+  margin-bottom: 16px;
+}
+.thanks_subtitle {
+  font-family: TT Travels;
+  font-size: 44px;
+  letter-spacing: -2px;
+  text-align: center;
+  color: #646562;
+}
+.contact-thanks {
+  background: #faf8f5;
+  border-radius: 12px;
+  padding: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 19px;
+}

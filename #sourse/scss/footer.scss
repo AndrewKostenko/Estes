@@ -1,0 +1,142 @@
+.footer {
+	margin-top: 120px;
+	background: #ffffff;
+	// .footer_top
+	&_top {
+		margin-top: 60px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #eae3d9;
+		display: flex;
+		justify-content: space-between;
+		grid-gap: 30px;
+		@media (max-width: 767px) {
+			flex-direction: column;
+			margin-top: 40px;
+		}
+	}
+	// .footer_title
+	&_title {
+		font-family: TT Travels;
+		font-size: 36px;
+		font-weight: 500;
+		line-height: 40 / 36 * 100%;
+		letter-spacing: -1px;
+		color: $black;
+		max-width: 780px;
+
+		@media (max-width: 767px) {
+			font-size: 30px;
+		}
+		@media (max-width: 424px) {
+			font-size: 24px;
+		}
+	}
+	// .footer_logo
+	&_logo {
+		align-self: end;
+
+		@media (max-width: 767px) {
+			align-self: start;
+		}
+	}
+	// .footer_bottom
+	&_bottom {
+		min-height: 421px;
+		position: relative;
+
+		background: url(../img/footer/bg.png) center right / contain no-repeat;
+
+		@media (max-width: 424px) {
+			background-image: none;
+			min-height: inherit;
+			padding-bottom: 20px;
+		}
+	}
+	// .footer_inner
+	&_inner {
+		margin-top: 60px;
+		max-width: 570px;
+		position: relative;
+		z-index: 1;
+	}
+	// .footer_items
+	&_items {
+	}
+	// .footer_item
+	&_item {
+		padding: 12px 0 40px;
+		border-top: 1px solid #eae3d9;
+
+		display: flex;
+
+		grid-gap: 10px;
+
+		a {
+			font-size: 24px;
+			font-weight: 500;
+			line-height: 32 / 24 * 100%;
+			letter-spacing: -0.01em;
+			color: $black;
+		}
+		span {
+			position: absolute;
+			top: -15px;
+			right: -15px;
+			transform: translateX(100%);
+
+			font-size: 14px;
+			font-weight: 500;
+			letter-spacing: -0.02em;
+			color: #a0a747;
+
+			&::before {
+				content: "";
+				position: absolute;
+				width: 4px;
+				height: 4px;
+				left: -10px;
+				top: 15px;
+				background: #a0a747;
+				border-radius: 50%;
+			}
+		}
+
+		@media (max-width: 767px) {
+			flex-direction: column;
+			padding: 12px 0 20px;
+		}
+	}
+	// .footer_img
+	&_img {
+		margin-bottom: 40px;
+		img {
+			max-width: 100%;
+		}
+	}
+	// .footer_text
+	&_text {
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 32 / 24 * 100%;
+		letter-spacing: -0.01em;
+		color: $black;
+		position: relative;
+
+		@media (max-width: 767px) {
+			font-size: 20px;
+		}
+	}
+	// .footer_label
+	&_label {
+		flex: 0 0 193px;
+		font-size: 24px;
+		line-height: 32 / 24 * 100%;
+		letter-spacing: -0.01em;
+		color: $black;
+
+		@media (max-width: 767px) {
+			font-size: 20px;
+			flex: 1 1 auto;
+		}
+	}
+}
